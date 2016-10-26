@@ -1,0 +1,35 @@
+/*
+ * Name: Ji Eun Han
+ * Assignment: Project 01
+ * Section: TR 9:40am
+ * Lab TA: Chengyu Deng, Matt Delsordo
+ * I collaborated with Mackenzie Lee. 
+ */
+ 
+ Ji Eun Han 
+ Email: jhan46@u.rochester.edu
+ Partner: Mackenzie Lee 
+ 
+ README 
+ 
+ This is for CSC 172 Project 01 where the purpose of the code is encode an input file into bytes and then 0's and 1's 
+ as well as to decode that output by using the error correcting Hamming code to convert that back to the original type file
+ we input the first place. For Hamming 7,4, the steps in the code was to convert the content of the file if that be integer
+ or string or what else into bytes which are represented by 8 digits. We split that 8 digit into four and run through the 
+ generating matrix from Hamming code and result with a 7 digit result. That's the encoding part. The decoding part starts by
+ multiplying that 7 digit to the Hamming code check parity matrix or H Matrix to convert it back to 4 digit and then shrink 
+ that array of 4 digits into array of 8 digits and then convert it back to the original content of the input file into the 
+ decode file. The Hamming class represents such encoding and decoding methods for Hamming 7,4 while Hamming15_11 class includes
+ the similar methods except with Hamming 15,11 code not 7,4. So for Hamming 15,11 methods, the process starts by converting the 
+ content of the input file as 8 digit code but instead of splitting them in half, add three zeros in the very front of each eight 
+ digit binary numbers. With that multiply with the Hamming 15,11 generator code so you'll result with a fifteen digit code. 
+ From that we pull out the 2nd, 4th, 5th, 6th, 8th, 9th, 10th, 11th, 12th, 13th and 14th digit of that fifteen digit number 
+ to create an eight digit number to convert that back to the original content of the input file. 
+ 
+ Hamming7_4 textfile is the input file, Hamming7_4_OUTPUT textfile is the array of 7 digits that we result with after the encoding 
+ method while Hamming7_4_OUTPUT has the result of the decoding method; Hamming_15_11 is the input file using the corresponding 
+ Hamming 15,11 code, Hamming_15_11_OUTPUT is the result of the encoding method while Hamming_15_11Decode is the result 
+ (identical to inputfile) after the decoding method.
+ 
+ 
+  
